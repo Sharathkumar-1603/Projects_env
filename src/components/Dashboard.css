@@ -1,0 +1,74 @@
+/* Container for the entire dashboard */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  /* Title section */
+  .dashboard-container h1 {
+    color: #4CAF50;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Welcome message */
+  .dashboard-container h2 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+  /* Button section */
+  .dashboard-container button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-container button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Additional styling for the Back button */
+  .dashboard-container button[type="button"] {
+    background-color: #6b6b6b;
+  }
+  
+  .dashboard-container button[type="button"]:hover {
+    background-color: #565656;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .dashboard-container {
+      padding: 20px;
+    }
+  
+    .dashboard-container h1 {
+      font-size: 1.5rem;
+    }
+  
+    .dashboard-container h2 {
+      font-size: 1.2rem;
+    }
+  
+    .dashboard-container button {
+      padding: 12px 25px;
+      font-size: 1rem;
+    }
+  }
+  

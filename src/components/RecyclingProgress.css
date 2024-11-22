@@ -1,0 +1,83 @@
+.recycling-progress-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.form-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns for name and address */
+  gap: 15px;
+}
+
+.form-label {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.form-input,
+.form-textarea {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.form-textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+/* Make map container full width */
+.map-container {
+  width: 100%; /* Full width */
+  height: 300px;
+  margin-bottom: 20px;
+  border-radius: 5px; /* Optional for rounded corners */
+  overflow: hidden; /* To ensure content inside doesn't spill out */
+}
+
+/* Button Styles */
+.submit-button {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  grid-column: span 2; /* Makes the submit button span across both columns */
+}
+
+.submit-button:disabled {
+  background-color: #dcdcdc;
+  cursor: not-allowed;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+/* Responsiveness for small screens */
+@media (max-width: 768px) {
+  .form-container {
+    grid-template-columns: 1fr; /* Single column for smaller screens */
+  }
+
+  .map-container {
+    height: 200px; /* Adjust map size on smaller screens */
+  }
+}
