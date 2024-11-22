@@ -130,8 +130,8 @@ const RecyclingProgress = () => {
         <label className="form-label">Address:</label>
         <input
           type="text"
-          name="address"
-          value={formData.address || ''}
+          name="location"
+          value={formData.location || ''}
           onChange={handleInputChange}
           className="form-input"
           required
@@ -148,17 +148,6 @@ const RecyclingProgress = () => {
 
         <label className="form-label">Image:</label>
         <input type="file" accept="image/*" onChange={handleImageChange} className="form-input" required />
-
-        <label className="form-label">Location (Type Area Name):</label>
-        <input
-          type="text"
-          name="location"
-          value={formData.location || ''}
-          onChange={handleInputChange}
-          placeholder="Enter your location"
-          className="form-input"
-          required
-        />
 
         <div className="map-container">
           <MapContainer
@@ -179,7 +168,7 @@ const RecyclingProgress = () => {
         </button>
       </form>
       <div>
-        <button type="button" onClick={handleBack}>Back</button>
+        <button type="button" className="about-btn" onClick={handleBack}>Back</button>
       </div>
     </div>
   );

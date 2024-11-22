@@ -12,12 +12,6 @@
   height: 80px;
 }
 
-.navbar .logo {
-  font-size: 1.8rem;
-  color: #fff; /* White text for the logo */
-  font-weight: bold;
-  text-transform: uppercase;
-}
 
 .nav-links {
   display: flex;
@@ -46,9 +40,6 @@
   transition: background-color 0.3s ease;
 }
 
-.logout-btn:hover {
-  background-color: #e64a19; /* Darker brown on hover */
-}
 
 /* Main Content Section */
 .main-content {
@@ -75,8 +66,8 @@
   }
 
   .nav-links {
-    flex-direction: column;
-    margin-top: 15px;
+    flex-direction: row;
+    /* margin-top: 15px; */
   }
 
   .hero {

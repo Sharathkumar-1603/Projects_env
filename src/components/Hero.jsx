@@ -14,7 +14,7 @@ const Hero = () => {
           <p className="hero-description">
             We are committed to protecting the environment through innovative solutions. From recycling initiatives to renewable energy, our mission is to build a greener, sustainable future for generations to come. Join us in this mission to make a meaningful difference.
           </p>
-          <Link to="/learn-more" className="hero-btn">
+          <Link to="/about" className="hero-btn">
             Learn More
           </Link>
         </div>
