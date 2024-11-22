@@ -1,60 +1,61 @@
 .about-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 60px 20px;
-    height: 100vh;
-    background-color: #e5f1e6; /* Soft green background for environmental theme */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.about-content {
+  max-width: 600px; /* Limit content width */
+  text-align: center;
+  padding: 20px;
+}
+
+.about-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2c6a4f; /* Dark green title color */
+  margin-bottom: 15px;
+}
+
+.about-description {
+  font-size: 1rem;
+  color: #555; /* Neutral text color for readability */
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.about-btn {
+  background-color: #2ecc71; /* Green button color */
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.about-btn:hover {
+  background-color: #27ae60; /* Darker green on hover */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 20px; /* Reduce padding on smaller screens */
   }
-  
-  .about-content {
-    max-width: 800px; /* Limiting the text width */
-    padding: 20px;
-    text-align: center; /* Centering the text */
-  }
-  
+
   .about-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #2c6a4f; /* Dark green color for the title */
+    font-size: 1.8rem; /* Slightly smaller title */
   }
-  
+
   .about-description {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    margin-bottom: 20px;
-    color: #555; /* Slightly dark text for easy readability */
+    font-size: 0.9rem; /* Smaller text for better mobile fit */
   }
-  .about-btn{
-    background-color: #2ecc71;
-    color: white;
-    padding: 15px 30px;
-    font-size: 1.2rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 20px;
+
+  .about-btn {
+    font-size: 0.9rem; /* Adjust button size for smaller screens */
+    padding: 8px 16px;
   }
-  
-  /* Responsive design for smaller screens */
-  @media (max-width: 768px) {
-    .about-section {
-      padding: 40px 20px; /* Reduce padding for smaller screens */
-    }
-  
-    .about-content {
-      max-width: 90%; /* Take more width on smaller screens */
-      padding: 10px;
-    }
-  
-    .about-title {
-      font-size: 2rem; /* Slightly smaller title for smaller screens */
-    }
-  
-    .about-description {
-      font-size: 1rem; /* Adjust font size for better readability on mobile */
-    }
-  }
-  
+}
