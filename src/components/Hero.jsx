@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Hero.css"; // Import the CSS for styling
+import '../styles/Hero.css'
 import  hero from "../images/environment.webp"
 
 const Hero = () => {

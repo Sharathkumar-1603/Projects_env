@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { auth } from "../firebaseConfig"; // Ensure Firebase is imported properly
 import { signOut } from "firebase/auth";
-import "./Dashboard.css"; // Import the CSS file
+import '../styles/Dashboard.css'
 
 const Dashboard = () => {
   const [user, setUser] = useState(null);

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import "./AirQuality.css"; // Importing the CSS file
+import '../styles/AirQuality.css'
 
 const AirQuality = () => {
   const [airQuality, setAirQuality] = useState(null);

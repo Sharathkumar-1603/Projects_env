@@ -6,7 +6,7 @@ import "leaflet/dist/leaflet.css";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { db } from "../firebaseConfig";
-import "./RecyclingProgress.css"; // Import CSS file for styling
+import '../styles/RecyclingProgress.css'
 
 const RecyclingProgress = () => {
   const [formData, setFormData] = useState({

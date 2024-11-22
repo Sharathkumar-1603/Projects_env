@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { auth } from "../firebaseConfig"; // Make sure to import your Firebase configuration
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import Hero from "./Hero";
-import './Home.css';
+import '../styles/Home.css'
 
 const Home = () => {
   const [user, setUser] = useState(null);
