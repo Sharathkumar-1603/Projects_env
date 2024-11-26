@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { auth } from "../firebaseConfig"; // Ensure Firebase is imported properly
+import { auth } from "../firebaseConfig";
 import { signOut } from "firebase/auth";
 import '../styles/Dashboard.css'
 
@@ -11,22 +11,22 @@ const Dashboard = () => {
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((currentUser) => {
       if (currentUser) {
-        setUser(currentUser); // Set the user if authenticated
+        setUser(currentUser); 
       } else {
         console.log("No user logged in, redirecting to login...");
-        navigate("/login"); // Redirect to login if not logged in
+        navigate("/login");
       }
     });
 
-    // Clean up the subscription on unmount
+
     return () => unsubscribe();
   }, [navigate]);
 
   const handleLogout = async () => {
     try {
-      await signOut(auth); // Sign out the user
+      await signOut(auth); 
       console.log("User signed out successfully");
-      navigate("/"); // Redirect to login after logout
+      navigate("/"); 
     } catch (error) {
       console.error("Error during logout:", error);
     }
@@ -34,7 +34,7 @@ const Dashboard = () => {
 
 
   if (!user) {
-    return <div>Loading...</div>; // Show a loading message or spinner
+    return <div>Loading...</div>; 
   }
 
   return (

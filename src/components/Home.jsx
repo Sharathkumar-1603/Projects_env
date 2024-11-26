@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import { auth } from "../firebaseConfig"; // Make sure to import your Firebase configuration
+import { auth } from "../firebaseConfig";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import Hero from "./Hero";
 import '../styles/Home.css'
@@ -12,10 +12,10 @@ const Home = () => {
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
-      setUser(currentUser); // Set the user when the auth state changes
+      setUser(currentUser); 
     });
 
-    return () => unsubscribe(); // Clean up the listener on unmount
+    return () => unsubscribe();
   }, []);
 
   const handleLogout = async () => {
@@ -31,7 +31,6 @@ const Home = () => {
 
   return (
     <div className="home-page">
-      {/* Navigation Bar */}
       <nav className="navbar">
         <ul className="nav-links">
           <li><Link to="/" className="nav-link">Home</Link></li>
@@ -52,7 +51,6 @@ const Home = () => {
         </div>
       </nav>
 
-          {/* Main Content */}
           <div className="main-content">
         <h2>Welcome, {user ? user.displayName : "Guest"}!</h2>
         <p>

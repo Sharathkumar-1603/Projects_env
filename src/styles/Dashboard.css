@@ -1,4 +1,4 @@
-/* Container for the entire dashboard */
+
 .dashboard-container {
     display: flex;
     flex-direction: column;
@@ -13,21 +13,19 @@
   .logout-btn{
     background-color: transparent;
   }
-  /* Title section */
+
   .dashboard-container h1 {
     color: #4CAF50;
     font-size: 2rem;
     margin-bottom: 20px;
   }
   
-  /* Welcome message */
   .dashboard-container h2 {
     color: #333;
     font-size: 1.5rem;
     margin-bottom: 30px;
   }
   
-  /* Button section */
   .dashboard-container button {
     background-color: #4CAF50;
     color: white;

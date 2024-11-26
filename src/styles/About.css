@@ -6,7 +6,7 @@
 }
 
 .about-content {
-  max-width: 600px; /* Limit content width */
+  max-width: 600px; 
   text-align: center;
   padding: 20px;
 }
@@ -14,19 +14,19 @@
 .about-title {
   font-size: 2rem;
   font-weight: bold;
-  color: #2c6a4f; /* Dark green title color */
+  color: #2c6a4f;
   margin-bottom: 15px;
 }
 
 .about-description {
   font-size: 1rem;
-  color: #555; /* Neutral text color for readability */
+  color: #555;
   line-height: 1.5;
   margin-bottom: 20px;
 }
 
 .about-btn {
-  background-color: #2ecc71; /* Green button color */
+  background-color: #2ecc71;
   color: white;
   font-size: 1rem;
   padding: 10px 20px;
@@ -37,25 +37,25 @@
 }
 
 .about-btn:hover {
-  background-color: #27ae60; /* Darker green on hover */
+  background-color: #27ae60;
 }
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   .about-section {
-    padding: 20px; /* Reduce padding on smaller screens */
+    padding: 20px;
   }
 
   .about-title {
-    font-size: 1.8rem; /* Slightly smaller title */
+    font-size: 1.8rem; 
   }
 
   .about-description {
-    font-size: 0.9rem; /* Smaller text for better mobile fit */
+    font-size: 0.9rem; 
   }
 
   .about-btn {
-    font-size: 0.9rem; /* Adjust button size for smaller screens */
+    font-size: 0.9rem; 
     padding: 8px 16px;
   }
 }

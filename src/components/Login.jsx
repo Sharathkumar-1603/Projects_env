@@ -10,8 +10,8 @@ const Login = ({ setIsLoggedIn }) => {
   const navigate = useNavigate();
 
   const handleLogin = async () => {
-    console.log("Username:", username); // Debugging log
-    console.log("Password:", password); // Debugging log
+    console.log("Username:", username); 
+    console.log("Password:", password); 
 
     try {
       // Use Firebase to sign in
@@ -19,7 +19,7 @@ const Login = ({ setIsLoggedIn }) => {
       setIsLoggedIn(true); // Update state to indicate logged in
       navigate("/dashboard"); // Redirect to dashboard after login
     } catch (error) {
-      console.error("Login failed:", error.message); // Debugging log
+      console.error("Login failed:", error.message);
       alert("Invalid credentials");
     }
   };

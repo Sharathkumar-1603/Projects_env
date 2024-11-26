@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { collection, onSnapshot, deleteDoc, doc } from "firebase/firestore";
-import { db } from "../firebaseConfig"; // Ensure Firebase is configured
+import { db } from "../firebaseConfig"; 
 import axios from "axios";
 
 const RecyclingAdmin = () => {
@@ -15,16 +15,15 @@ const RecyclingAdmin = () => {
       setSubmissions(data);
     });
 
-    // Cleanup subscription on component unmount
     return () => unsubscribe();
   }, []);
 
   const handleClear = async (id, clientEmail) => {
     try {
-      // Clear the submission from the Firebase database
+    
       await deleteDoc(doc(db, "recyclingSubmissions", id));
       
-      // After successful deletion, send email to the client
+ 
       await sendEmailNotification(clientEmail);
 
       alert("Submission cleared successfully and client notified!");

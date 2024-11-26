@@ -6,7 +6,6 @@ import RecyclingProgress from "./components/RecyclingProgress";
 import Register from "./components/Register";
 import Login from "./components/Login";
 import About from "./components/About";
-import Feedback from "./components/Feedback";
 import Dashboard from "./components/Dashboard";
 
 import './App.css'
@@ -14,7 +13,7 @@ import RecyclingAdmin from "./components/RecyclingAdmin";
 import Hero from "./components/Hero";
 
 const App = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false); // Track login status
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   return (
     <Router>
@@ -27,7 +26,6 @@ const App = () => {
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login setIsLoggedIn={setIsLoggedIn} />} />
         <Route path="/about" element={<About />} />
-        <Route path="/feedback" element={<Feedback />} />
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </Router>

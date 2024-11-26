@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { auth } from "../firebaseConfig"; // Import Firebase configuration
+import { auth } from "../firebaseConfig";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { useNavigate, Link } from "react-router-dom";
 import '../styles/Register.css'
@@ -20,7 +20,6 @@ const Register = () => {
     setLoading(true);
     setError(""); // Clear previous errors
 
-    // Validate all fields
     if (!fullName || !email || !password || !phoneNumber || !age || !from) {
       setError("All fields are required.");
       setLoading(false);
@@ -47,10 +46,9 @@ const Register = () => {
 
     try {
       await createUserWithEmailAndPassword(auth, email, password);
-      // Optionally, store additional user info like fullName, age, phoneNumber in Firestore
-      navigate("/login"); // Navigate to login after successful registration
+      navigate("/login");
     } catch (err) {
-      // Handle specific Firebase errors
+
       if (err.code === "auth/email-already-in-use") {
         setError("Email is already in use.");
       } else if (err.code === "auth/invalid-email") {
