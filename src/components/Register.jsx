@@ -110,7 +110,7 @@ const Register = () => {
         <button type="submit" className="register-button" disabled={loading}>
           {loading ? "Registering..." : "Register"}
         </button>
-        <p>if you form already <Link to="/login">Login</Link></p>
+        <p>Hav you already?<Link to="/login">Login</Link></p>
       </form>
       {error && <p className="register-error">{error}</p>}
     </div>

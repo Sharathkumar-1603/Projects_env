@@ -45,7 +45,7 @@ const Login = ({ setIsLoggedIn }) => {
         <button className="register-button" onClick={handleLogin}>
           Login
         </button>
-        <p>you not form already <Link to="/register">Regsier</Link></p>
+        <p>Do not have an account? <Link to="/register">Regsier</Link></p>
       </form>
     </div>
   );

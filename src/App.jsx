@@ -13,7 +13,7 @@ import RecyclingAdmin from "./components/RecyclingAdmin";
 import Hero from "./components/Hero";
 
 const App = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
 
   return (
     <Router>

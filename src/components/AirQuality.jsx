@@ -100,6 +100,9 @@ const AirQuality = () => {
     <div className="air-quality-container">
       <h1>Air Quality</h1>
       <p>Location: {locationDetails.city}, {locationDetails.state}, {locationDetails.country}</p>
+      <p>Name</p>
+      <input></input>
+      <button>location</button>
       <p>AQI: {airQuality.main.aqi}</p>
       <p>CO: {airQuality.components.co}</p>
       <p>NO: {airQuality.components.no}</p>
